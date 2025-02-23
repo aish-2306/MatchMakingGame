@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background: url(./Coffee_Shop/mmg_bg_5.gif);
+    background-size: cover;
+    background-position: center;
+    animation: backgroundScroll 10s linear infinite;
+    background-color: #fdfdfd;
+    color: #d6cece;
+}
+
+#landing-page {
+    margin-top: 50px;
+}
+.f
+h1 {
+    font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-shadow: 
+        2px 2px 0px #ff009d, 
+        -2px -2px 0px #051005;
+    animation: glitch 10s linear infinite alternate;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+            2px 2px 0px #ff005185, 
+            -2px -2px 0px #020208;
+    }
+    50% {
+        text-shadow: 
+            4px 4px 0px #00ffea86, 
+            -4px -4px 0px #0a0101;
+        transform: skewX(10deg);
+    }
+    100% {
+        text-shadow: 
+            -2px -2px 0px #ff00c8a1, 
+            2px 2px 0px #0f020c;
+        transform: skewX(-10deg);
+    }
+}
+
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #01050654;
+    color: rgb(153, 139, 139);
+    border: 2dfpx;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #000501;
+}
+
+#category-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#category-buttons button {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+}
+
+#game-container {
+    display: none;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(248, 246, 246);
+    border: 2px solid #020808;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 0px 20px rgba(12, 8, 8, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(8, 211, 222, 0.984);
+    text-align: center;
+    border: 2px solid rgba(8, 208, 222, 0.984);
+}
+
+.popup img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
